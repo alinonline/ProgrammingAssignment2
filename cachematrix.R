@@ -1,14 +1,14 @@
-## This function is to return a matrix that is the inverse of 'x'
+## This function is to return a matrix that is the inverse of matrix 'x'
 ## If the inverse has already been calculated (and the matrix has not changed), 
 ## then the cachesolve should retrieve the inverse from the cache.
-## assume that the matrix supplied is always invertible.
+## (assume that the matrix supplied is always invertible)
 
 ## makeCacheMatrix function create a special vetor 
 ## which is a list containing functions and get and set matrix and inverse
 
 makeCacheMatrix <- function(x = matricx()) {
   
-  #inital the inverse varible solve to null
+  #inital the inverse varible to null
   inverse <- NULL  
   
   #set the matricx
@@ -53,8 +53,7 @@ cacheSolve <- function(x, ...) {
   message("Checking cache...") 
   
   ##If the 'x' environment has been evaluated 
-  # before, the function prints the message and
-  # the value of inverse (the cached inverse),
+  # before, the function prints the message and the value of inverse (the cached inverse),
   # othrewise prints the message about no previouse cached value
   # and caculate and set the new cache value
   
